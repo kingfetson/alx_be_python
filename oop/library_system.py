@@ -79,12 +79,10 @@ class Library:
             book (Book): A Book, EBook, or PrintBook instance
         """
         self.books.append(book)
-        print(f"Added: {book.title}")
+        # No print statement here to match expected output
     
     def list_books(self) -> None:
         """List all books in the library with their details."""
-        print("\nLibrary Collection:")
-        print("-" * 40)
         for book in self.books:
             print(book)
-        print("-" * 40)
+        # No extra formatting lines
